@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arnab Pattanayak — Portfolio</title>
+  <meta name="description" content="Portfolio of Arnab Pattanayak — Entry Level Software Developer. Projects, skills, experience and contact." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#94a3b8; --accent:#06b6d4; --glass: rgba(255,255,255,0.03);
+      --maxw:1100px; --radius:12px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; margin:0; background:linear-gradient(180deg,#071426 0%, #07182a 100%); color:#e6eef6; -webkit-font-smoothing:antialiased;}
+    .container{max-width:var(--maxw); margin:32px auto; padding:24px;}
+
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+    nav ul{display:flex;gap:14px;list-style:none;padding:0;margin:0}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin-bottom:28px}
+    .card{background:var(--card);padding:20px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    h1{margin:0;font-size:28px}
+    .sub{color:var(--muted);margin-top:6px}
+
+    .about p{line-height:1.6;color:#d9e6f2}
+    .cta{display:flex;gap:12px;margin-top:14px}
+    .btn{background:linear-gradient(90deg,var(--accent),#7c3aed);border:none;padding:10px 14px;border-radius:10px;color:#031128;font-weight:700;cursor:pointer}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    .info-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}
+    .info-item{background:var(--glass);padding:10px;border-radius:10px;color:var(--muted);font-size:14px}
+
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:18px}
+    .project{padding:14px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border:1px solid rgba(255,255,255,0.03)}
+    .project h3{margin:0 0 8px 0}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;font-size:12px;color:var(--muted)}
+
+    .grid-2{display:grid;grid-template-columns:1fr 320px;gap:16px}
+    .skills ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+    .skill{display:flex;justify-content:space-between;background:var(--glass);padding:8px;border-radius:8px}
+
+    footer{margin-top:28px;padding:18px;border-radius:12px;background:transparent;display:flex;align-items:center;justify-content:space-between;color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr;}
+      .grid-2{grid-template-columns:1fr;}
+      nav ul{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">AP</div>
+        <div>
+          <div style="font-weight:700">Arnab Pattanayak</div>
+          <div style="font-size:12px;color:var(--muted)">Entry Level Software Developer — Nagpur, Maharashtra</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card about" id="about">
+        <h1>Hi — I'm Arnab.</h1>
+        <div class="sub">Motivated and disciplined B.Tech student passionate about machine learning and software development.</div>
+        <p style="margin-top:12px">I am an Electronics & Telecommunication engineering undergraduate (expected 2025) with practical experience through simulations and projects covering data analytics, IoT and predictive models. I enjoy building end-to-end solutions — from prototyping hardware data collection to training simple ML models and delivering clean UI/UX for demos.</p>
+
+        <div class="cta">
+          <a class="btn" href="final_resume3.pdf" download>Download Resume</a>
+          <a class="btn secondary" href="#contact">Contact</a>
+        </div>
+
+        <div class="info-list" style="margin-top:14px">
+          <div class="info-item"><strong>Location</strong><div style="font-size:13px;color:var(--muted)">Nagpur, Maharashtra</div></div>
+          <div class="info-item"><strong>Email</strong><div style="font-size:13px;color:var(--muted)">arnabpattanayak2005@gmail.com</div></div>
+          <div class="info-item"><strong>Phone</strong><div style="font-size:13px;color:var(--muted)">+91-7709597471</div></div>
+          <div class="info-item"><strong>Languages</strong><div style="font-size:13px;color:var(--muted)">English, Hindi, Marathi, Bengali</div></div>
+        </div>
+      </div>
+
+      <aside class="card" style="height:100%">
+        <h3 style="margin-top:0">Education</h3>
+        <div style="color:var(--muted);font-size:14px">B.Tech — Electronics & Telecommunication<br/><strong>Yeshwantrao Chavan College of Engineering</strong><br/>Overall percentage: 70<br/>Jan 2025 - Pursuing</div>
+
+        <hr style="margin:12px 0;border:none;border-top:1px solid rgba(255,255,255,0.04)">
+        <h4 style="margin:6px 0">Certifications</h4>
+        <div style="color:var(--muted);font-size:13px">
+          • Data Science 101 — Cognitive Class<br/>
+          • Machine Learning with Python — Cognitive Class<br/>
+          • Securing Android Devices<br/>
+          • C, C++
+        </div>
+
+        <hr style="margin:12px 0;border:none;border-top:1px solid rgba(255,255,255,0.04)">
+        <h4 style="margin:6px 0">Simulations / Experience</h4>
+        <div style="color:var(--muted);font-size:13px">
+          • Tata Cybersecurity - Security Analyst (Forage) — June 2025<br/>
+          • Deloitte Australia - Data Analytics (Forage) — July 2025
+        </div>
+      </aside>
+    </section>
+
+    <section id="projects">
+      <h2 style="margin-bottom:10px">Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>Crop Prediction & Monitoring System</h3>
+          <p style="color:var(--muted);font-size:14px;margin:6px 0">Mar 2025 — May 2026</p>
+          <p>IoT system that predicts suitable crops using soil & weather inputs and monitors environmental variables in real-time.</p>
+          <div class="tags" style="margin-top:10px">
+            <span class="tag">DHT11</span>
+            <span class="tag">Soil Moisture</span>
+            <span class="tag">Relay Control</span>
+            <span class="tag">Embedded</span>
+          </div>
+          <div style="margin-top:10px;color:var(--muted);font-size:13px">Role: Hardware integration (sensors), data collection, prototype control logic.</div>
+        </article>
+
+        <article class="project">
+          <h3>Smart Nutrition Monitoring & Recommendation (Ongoing)</h3>
+          <p style="color:var(--muted);font-size:14px;margin:6px 0">Ongoing</p>
+          <p>Designing a system to monitor children's nutrition and provide recommendations. Work includes data modelling and UI prototypes.</p>
+          <div class="tags">
+            <span class="tag">Data Analysis</span>
+            <span class="tag">UI/UX</span>
+            <span class="tag">Prototype</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Her Essence — Ecommerce UI (Design)</h3>
+          <p style="color:var(--muted);font-size:14px;margin:6px 0">UI Design Project</p>
+          <p>Created a shopping UI design targeted at female users focusing on accessibility and conversion-focused flows.</p>
+          <div class="tags"><span class="tag">Figma</span><span class="tag">UI/UX</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section style="margin-top:20px" id="skills">
+      <h2 style="margin-bottom:10px">Skills</h2>
+      <div class="grid-2">
+        <div class="card skills">
+          <ul>
+            <li class="skill"><span>Python</span><strong>Intermediate</strong></li>
+            <li class="skill"><span>C++ / C</span><strong>Intermediate</strong></li>
+            <li class="skill"><span>HTML / CSS / JS</span><strong>Basic</strong></li>
+            <li class="skill"><span>IoT Sensors</span><strong>Practical</strong></li>
+            <li class="skill"><span>Tableau / Excel</span><strong>Working</strong></li>
+          </ul>
+        </div>
+
+        <aside class="card">
+          <h4 style="margin:0">Soft Skills & Languages</h4>
+          <div style="color:var(--muted);margin-top:8px;font-size:14px">
+            <strong>Soft:</strong> Problem Solving, Time Management, Teamwork, Creativity, Critical Thinking<br/>
+            <strong>Languages:</strong> English (Native), Hindi (Native), Marathi (Native), Bengali (Advanced)
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section style="margin-top:20px" id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p style="color:var(--muted);margin:0">Email: <a href="mailto:arnabpattanayak2005@gmail.com">arnabpattanayak2005@gmail.com</a></p>
+        <p style="color:var(--muted);margin:6px 0">Phone: +91-7709597471</p>
+        <p style="color:var(--muted);margin:6px 0">LinkedIn: <a href="https://linkedin.com/in/arnab-pattanayak" target="_blank">/in/arnab-pattanayak</a></p>
+        <p style="color:var(--muted);margin:6px 0">GitHub: <a href="https://github.com/arnabpattanayak-spp" target="_blank">github.com/arnabpattanayak-spp</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <div style="font-size:13px">© Arnab Pattanayak — Entry Level Software Developer</div>
+      <div style="font-size:13px;color:var(--muted)">Built with ❤️ • HTML • CSS • JavaScript</div>
+    </footer>
+  </div>
+
+  <script>
+    // Small enhancement: scroll to section smooth behavior
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        e.preventDefault();
+        const id=a.getAttribute('href').slice(1);
+        const el=document.getElementById(id);
+        if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+      })
+    })
+  </script>
+</body>
+</html>
